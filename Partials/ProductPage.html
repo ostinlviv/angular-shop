@@ -1,0 +1,9 @@
+
+<div class="container" data-ng-model="selectedProduct">
+    <h2 class="title">{{selectedProduct.name}}</h2>
+    <img src="{{selectedProduct.image}}">
+    <div class="rightColumn">
+        <div>{{selectedProduct.description}}</div>
+        <button data-ng-click="buyProduct(product)">Buy</button>
+    </div>
+</div>

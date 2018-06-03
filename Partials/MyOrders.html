@@ -1,0 +1,9 @@
+<div class="container">
+    <h2 class="title">My orders</h2>
+    <ul class="container" data-ng-repeat="product in soldProducts track by $index" >
+        <li class="orderList">
+            <span>{{product.name}}</span>
+            <span><button data-ng-click="removeProduct(product.id)">remove</button></span>
+        </li>
+    </ul>
+</div>

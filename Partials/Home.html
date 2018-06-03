@@ -1,0 +1,16 @@
+<div class="container">
+  <h2 class="title">Shop</h2>
+  <ul id="goods">
+    <li class="good" data-ng-repeat="product in products" >
+      <a href="#!product/{{product.id}}/{{product.name}}">
+        <div class="label">{{product.name}}</div>
+        <img src="{{product.image}}" alt="{{product.name}}" height="180" width="180">
+        <div class="description">{{product.description | limitTo : 56}}</div>
+      </a>
+    </li>
+  </ul>
+  <div id="buttons">
+    <a class="button" href="#!cart">My orders</a>
+    <a class="button" href="#!add">Add</a>
+  </div>
+</div>

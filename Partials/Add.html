@@ -1,0 +1,17 @@
+<div class="container">
+    <h2 class="title">Add product</h2>
+    <br />
+    Name
+    <br />
+    <input class="input" type="text" data-ng-model="newProduct.name" />
+    <br />
+    Image link
+    <br />
+    <input class="input" type="url" data-ng-model="newProduct.image" size="50"/>
+    <br />
+    Description
+    <br />
+    <textarea class="input" data-ng-model="newProduct.description" cols="52" rows="5"></textarea>
+    <br />
+    <button  data-ng-click="addProduct()">Add</button>
+  </div>
